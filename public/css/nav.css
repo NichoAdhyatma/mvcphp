@@ -1,0 +1,195 @@
+@import url('./starter.css');
+
+nav {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.left {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 50px;
+  padding: 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: rgb(68, 235, 22);
+}
+
+#leafImg {
+  width: 60px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#btn {
+  padding: 15px;
+  width: 100px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+#btn:hover {
+cursor: pointer;
+}
+
+
+.login {
+  background-color: green;
+  color: white;
+}
+
+.signUp {
+  background-color: greenyellow;
+}
+
+main {
+  margin: 200px auto 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.column {
+  display: none;
+}
+
+#hmbtn {
+  display: none;
+}
+
+@media only screen and (max-width: 999px) {
+  nav ul {
+    display: none;
+  }
+
+  #columnLogin,#columnSign {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: rgba(13, 146, 13, 0.895);
+  }
+
+ 
+  .right #btn {
+    display: none;
+  }
+
+  #hmbtn {
+    display: block;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .column {
+    display: flex;
+    height: 100%;
+    flex-direction:  column;
+    align-items: start;
+    position: fixed;
+    right: 0;
+    top: 90px;
+    padding: 30px;
+    background: white;
+    z-index: 1;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100%;
+  }
+
+  .slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+#ulC {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  #liC {
+    list-style-type: none;
+    margin-top: 30px;
+  }
+
+  .column ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #leafImg {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  #hmbtn {
+    width: 30px;
+  }
+
+  #leafImg {
+    width: 40px;
+    margin-left: 0;
+  }
+
+  nav {
+    height: 70px;
+  }
+
+  h1 {
+    margin-top: -70px;
+  }
+
+  .column {
+    margin-top: -30px;
+  }
+}
+
+
+

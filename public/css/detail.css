@@ -1,0 +1,98 @@
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.cardCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.card {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card ul {
+  margin-left: 10px;
+  padding: 30px;
+}
+
+.card ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#detail {
+  flex-direction: column;
+  align-items: start;
+}
+
+ul li p {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+#imgDetail {
+  width: 400px;
+  border-radius: 10px;
+  height: 350px;
+  margin-left: 10px;
+}
+
+#cart {
+  margin-top: 30px;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  color: white;
+  background-color: rgb(37, 156, 37);
+}
+
+#cart:hover {
+  cursor: pointer;
+}
+
+#harga {
+  font-weight: 600;
+  color: green;
+}
+
+@media only screen and (max-width: 968px) {
+  .card {
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  #imgDetail {
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin:0;
+  }
+
+  .card ul {
+    height: auto;
+  }
+
+  .cardCon {
+    padding-bottom: 30px;
+  }
+
+  
+}
