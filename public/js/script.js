@@ -1,5 +1,10 @@
 let hamburger = document.getElementById('hmbtn')
 let baseurl = 'http://localhost/mvc/public/asset/'
+let modal = document.querySelector('.modal')
+let login = document.querySelectorAll('.tombol')
+let register = document.querySelectorAll('.tombol2')
+let modalLogin = document.querySelector('#loginModal')
+let modalRegister = document.querySelector('#registerModal')
 
 hamburger.addEventListener('click', function() {
    document.getElementById('column').classList.toggle('slide')
@@ -11,8 +16,26 @@ hamburger.addEventListener('click', function() {
    }
 })
 
-let stringToReplace = "*&%/aku2 satu_"
+for (let i = 0; i < 3; i++) {
+   login[i].onclick = function(event) {
+      if (event.target === login[i] ) {
+         modal.style.display = "flex"
+         modalRegister.style.display = "none"
+         modalLogin.style.display = "flex"
+      }
+   }
 
-var desired = stringToReplace.replace(/[^\w\s]/gi, '')
+   register[i].onclick = function(event) {
+      if (event.target === register[i] ) {
+         modal.style.display = "flex"
+         modalRegister.style.display = "flex"
+         modalLogin.style.display = "none"
+      }
+   }
+}
 
-console.log(desired)
+window.onclick = function(event) {
+   if (event.target == modal) {
+     modal.style.display = "none";
+   }
+ }

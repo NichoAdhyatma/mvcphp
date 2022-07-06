@@ -11,9 +11,13 @@
         corporis sunt quam reprehenderit cumque, quos corrupti?
          Necessitatibus eius nostrum dolorem at?</span></li>
       <li><p>Pusat Produksi</p><span>Malang, Jawa Timur</span></li>
-      <li><p>Rating : </p><?php for($i = 0; $i < 5; $i++) :?>
+      <li id="rating" ><p>Rating : </p>
+      <div class="starCon">
+      <?php for($i = 0; $i < 5; $i++) :?>
               <img class="star" src="<?= BASEURL?>/asset/star.png" alt="">
-              <?php endfor ?> 5.0</li>
+              <?php endfor ?> 5.0
+      </div>
+      </li>
       <li><button id="cart">Add To Cart</button></li>
     </ul>
   </div>
