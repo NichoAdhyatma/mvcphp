@@ -12,8 +12,9 @@ class Profile extends Controller{
   
   public function register() {
       if(isset($_POST['register'])) {
-        if( $this->model('User_model')->registerUser($_POST) > 0 )  Flasher::setFlash(true);
-        else  Flasher::setFlash(false);
+        if( $this->model('User_model')->registerUser($_POST) > 0 )  
+           Flasher::setFlash(true, 'user');
+        else Flasher::setFlash(false, 'user');
       }
       header('Location: '.BASEURL);
   } 

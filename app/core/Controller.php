@@ -6,7 +6,7 @@ abstract class Controller {
     }
 
     public function model( $model ) {
-        require_once  APP. 'models//' .$model. '.php';
+        require_once  APP. 'models/' .$model. '.php';
         return new $model;
     }
 }

@@ -1,7 +1,9 @@
 <?php
 
-class Home Extends Controller {
-  public function index() {
+class Home extends Controller
+{
+  public function index()
+  {
     $data['judul'] = 'Home';
     $data['css'] = 'home';
 

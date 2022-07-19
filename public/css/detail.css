@@ -5,7 +5,6 @@ h1 {
 
 .cardCon {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -99,6 +98,13 @@ ul li p {
 
   .cardCon {
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  #formUbah {
+   height: 100%;
+   overflow: scroll;
   }
 }
 
